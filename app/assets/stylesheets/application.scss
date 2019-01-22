@@ -16,13 +16,15 @@
 @import "./modules/tab";
 @import "./modules/logout";
 @import "./modules/btn-content";
+@import "./modules/list";
 
 @import "./items/items";
 @import "./items/form-common";
-@import "./items/item_list_container.scss";
+@import "./items/item_list_container";
 @import "./items/select-form";
 @import "./items/input-form";
 @import "./items/show";
+@import "./items/search";
 
 @import "./users/credits/credit";
 @import "./users/edit";
