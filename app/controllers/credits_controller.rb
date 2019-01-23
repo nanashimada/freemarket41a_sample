@@ -1,4 +1,4 @@
-class CreditsController::Payjp < ApplicationController
+class CreditsController < ApplicationController
 
   before_action :set_api_key, only: [:pay, :create, :acquire_token]
   before_action :set_card_token, only: [:pay]
