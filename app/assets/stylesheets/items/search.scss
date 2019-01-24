@@ -99,6 +99,7 @@
         color: $WHITE;
         text-align: center;
         line-height: 45px;
+        border-radius: 4px;
       }
       &-right{
         text-align: center;
@@ -109,6 +110,7 @@
         background: $MAIN_RED;
         border: 1px solid $MAIN_RED;
         color: $WHITE;
+        margin: 0;
       }
     }
   }
