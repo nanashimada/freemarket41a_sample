@@ -30,13 +30,10 @@ Rails.application.routes.draw do
       end
 
       member do
-        patch :destroy
-      end
-
-      member do
         get :detail
         get :transaction
         post :pay, controller: :credits, action: :pay, as: 'pay'
+        patch :destroy
       end
 
     end
