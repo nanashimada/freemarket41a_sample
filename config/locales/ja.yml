@@ -15,6 +15,11 @@ ja:
         normal: やや傷や汚れあり
         fair: 傷や汚れあり
         poor: 全体的に状態が悪い
+      status:
+        exhibition: 出品中
+        exhibition_stop: 出品停止
+        sold: 売却済み
+        trade: 取引中
 
   activerecord:
     errors:
@@ -221,12 +226,3 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%m/%d %H:%M"
     pm: 午後
-
-  enums:
-   item:
-     status:
-       exhibition: 出品中
-       exhibition_stop: 出品停止
-       sold: 売却済み
-       trade: 取引中
-
