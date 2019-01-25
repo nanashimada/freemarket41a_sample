@@ -6,14 +6,14 @@ class ItemsController < ApplicationController
   before_action :set_params, only: [:advanced_search]
 
   def index
-    @ladies_items = Item.with_category.search_status('exhibition').where('large_category = 1').limit(4)
-    @mans_items = Item.with_category.search_status('exhibition').where('large_category = 2').limit(4)
-    @baby_items = Item.with_category.search_status('exhibition').where('large_category = 3').limit(4)
-    @cosme = Item.with_category.search_status('exhibition').where('large_category = 7').limit(4)
-    @brand_chanel = Item.search_status('exhibition').search_brand("シャネル").limit(4)
-    @brand_louisvuitton = Item.search_status('exhibition').search_brand("ルイヴィトン").limit(4)
-    @brand_supreme= Item.search_status('exhibition').search_brand("シュプリーム").limit(4)
-    @brand_nike = Item.search_status('exhibition').search_brand("ナイキ").limit(4)
+    @ladies_items = Item.with_category.search_status('exhibition').where('large_category = 1').order('updated_at': "DESC").limit(4)
+    @mans_items = Item.with_category.search_status('exhibition').where('large_category = 2').order('updated_at': "DESC").limit(4)
+    @baby_items = Item.with_category.search_status('exhibition').where('large_category = 3').order('updated_at': "DESC").limit(4)
+    @cosme = Item.with_category.search_status('exhibition').where('large_category = 7').order('updated_at': "DESC").limit(4)
+    @brand_chanel = Item.search_status('exhibition').search_brand("シャネル").order('updated_at': "DESC").limit(4)
+    @brand_louisvuitton = Item.search_status('exhibition').search_brand("ルイヴィトン").order('updated_at': "DESC").limit(4)
+    @brand_supreme= Item.search_status('exhibition').search_brand("シュプリーム").order('updated_at': "DESC").limit(4)
+    @brand_nike = Item.search_status('exhibition').search_brand("ナイキ").order('updated_at': "DESC").limit(4)
   end
 
   def new
